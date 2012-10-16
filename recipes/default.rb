@@ -14,3 +14,11 @@
     action :install
   end
 end
+
+directory "/root/.dsh" do
+  action :create
+end
+
+template "/root/.dsh/cluster" do
+  source "cluster.erb"
+end

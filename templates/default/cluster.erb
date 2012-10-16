@@ -1,0 +1,16 @@
+#
+# WARNING: This file is managed by chef
+#
+
+<% node['dsh']['groups'].each do |group, hosts| %>
+GROUP:<%= group%>
+<% hosts.each do |host| %>
+<%= host %>.<%= node['dsh']['domain'] %>
+<%- end %>
+<%- end %>
+<% node['dsh']['lumps'].each do |lump, groups| %>
+LUMP:<%= lump %>
+<% groups.each do |group| %>
+<%= group %>
+<%- end %>
+<%- end %>
