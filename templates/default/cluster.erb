@@ -5,7 +5,11 @@
 <% node['dsh']['groups'].each do |group, hosts| %>
 GROUP:<%= group%>
 <% hosts.each do |host| %>
+<% if host.split(".")[1].nil? %>
 <%= host %>.<%= node['dsh']['domain'] %>
+<%- else %>
+<%= host %>
+<%- end %>
 <%- end %>
 <%- end %>
 <% node['dsh']['lumps'].each do |lump, groups| %>
