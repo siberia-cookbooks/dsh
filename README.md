@@ -5,14 +5,11 @@ This cookbook installs the clusterit package and configures the ~/.dsh/clusterit
 file with information about goups of hosts and groups of groups of hosts which
 is quite useful in managing servers.
 
-
 Requirements
 ------------
 
 Attributes
 ----------
-
-TODO: List you cookbook attributes here.
 
 e.g.
 #### dsh::default
@@ -24,10 +21,16 @@ e.g.
     <th>Default</th>
   </tr>
   <tr>
-    <td><tt>['dsh']['bacon']</tt></td>
-    <td>Boolean</td>
-    <td>whether to include bacon</td>
-    <td><tt>true</tt></td>
+    <td><tt>['dsh']['groups']</tt></td>
+    <td>Hash</td>
+    <td>Lists groups -> server mappings</td>
+    <td><tt>false</tt></td>
+  </tr>
+  <tr>
+    <td><tt>['dsh']['lumps']</tt></td>
+    <td>Hash</td>
+    <td>Lists group of groups to group mappings<.td>
+    <td><tt>false</tt></td>
   </tr>
 </table>
 
@@ -42,7 +45,7 @@ Just include `dsh` in your node's `run_list`:
   "name":"my_node",
   "run_list": [
     "recipe[dsh]"
-  ]
+  ],
 }
 ```
 
@@ -60,4 +63,6 @@ e.g.
 
 License and Authors
 -------------------
-Authors: TODO: List authors
+Authors:
+
+Jacques Marneweck <jacques@powertrip.co.za>
