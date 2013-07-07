@@ -35,7 +35,6 @@ e.g.
 </table>
 
 #### dsh::default
-TODO: Write usage instructions for each cookbook.
 
 e.g.
 Just include `dsh` in your node's `run_list`:
@@ -46,6 +45,24 @@ Just include `dsh` in your node's `run_list`:
   "run_list": [
     "recipe[dsh]"
   ],
+  "dsh": {
+    "groups": {
+      "shareddev": [
+        "joey",
+        "monica",
+        "rachel",
+        "ross"
+      ]
+      ...
+    },
+    "lumps": {
+      "all": [
+        "admin",
+        "shared",
+        "shareddev"
+      ]
+    }
+  }
 }
 ```
 
