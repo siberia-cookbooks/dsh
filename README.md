@@ -105,4 +105,4 @@ THE SOFTWARE.
 
 Authors:
 
- * Jacques Marneweck <jacques@powertrip.co.za>
+ * Jacques Marneweck (jacques@powertrip.co.za)
