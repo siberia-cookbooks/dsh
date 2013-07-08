@@ -1,5 +1,5 @@
-dsh Cookbook
-============
+dsh Cookbook [![Build Status](https://www.travis-ci.org/siberia-cookbooks/dsh.png?branch=master)](https://www.travis-ci.org/siberia-cookbooks/dsh)
+==================================================================================================================================================
 
 This cookbook installs the clusterit package and configures the ~/.dsh/clusterit
 file with information about goups of hosts and groups of groups of hosts which
