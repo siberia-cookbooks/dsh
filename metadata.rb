@@ -1,3 +1,4 @@
+name             "dsh"
 maintainer       "Jacques Marneweck"
 maintainer_email "jacques@powertrip.co.za"
 license          "MIT"
